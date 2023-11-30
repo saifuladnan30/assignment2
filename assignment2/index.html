@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA Tube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="mx-5 mb-20">
+    <section>
+        <nav class="">
+            <div
+                class="container md:max-w-screen-xl mx-auto flex justify-between items-center border-b-2 border-b-gray-300 py-7">
+                <a href="#" class="flex items-start cursor-pointer">
+                    <img src="images/logo.png" alt="Your Logo" class="md:h-10 pr-2" />
+                </a>
+                <div class="flex md:space-x-5 mr-2 font-normal">
+                    <button onclick="sortAndDisplayByViews()"
+                        class="bg-gray-300 font-normal mt-2 md:px-8 px-3 py-2 text-black rounded">Sort by view</button>
+                </div>
+                <div class="flex items-center space-x-4 text-white">
+                    <a href="blog/blog.html"><button
+                            class="bg-red-600 font-normal mt-2 md:px-8 px-3 py-2 text-white rounded">Blog</button></a>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+
+    <section>
+        <div class="container max-w-screen-xl mx-auto md:my-5 my-3">
+            <div class="text-center">
+                <button onclick="loadAllData()" id="allBtn"
+                    class="bg-gray-300 md:mx-3 mx-1 font-normal mt-2 md:px-8 px-5 py-2 text-black rounded">All</button>
+                <button onclick="loadComedyData()" id="comedyBtn"
+                    class="bg-gray-300 md:mr-3 mr-1 font-normal mt-2 md:px-8 px-5 py-2 text-gray-700 rounded">Comedy</button>
+                <button onclick="loadMusicData()" id="musicBtn"
+                    class="bg-gray-300 font-normal mt-2 md:px-8 px-5 py-2 text-gray-700 rounded">Music</button>
+                <button onclick="loadDrawingData()" id="drawingBtn"
+                    class="bg-gray-300 md:mx-3 mx-1 font-normal mt-2 md:px-8 px-5 py-2 text-gray-700 rounded">Drawing</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Videos Card -->
+    <section>
+        <div id="videos" class="md:max-w-screen-xl mx-auto mt-12 flex flex-wrap gap-4 px-5">
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>
